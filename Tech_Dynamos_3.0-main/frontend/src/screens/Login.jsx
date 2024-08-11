@@ -70,7 +70,7 @@ const LoginForm = () => {
                     </form>
                 </div>
                 <div className="formImg">
-                    {/* <img src="./login.jpg" /> */}
+                    <img src="./login.jpg" />
                 </div>
             </div>
         </>

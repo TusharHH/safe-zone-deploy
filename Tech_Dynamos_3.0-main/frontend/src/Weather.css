@@ -1,0 +1,230 @@
+:root {
+    --Lheader-font: 46px;
+    --Lsectionhead-font: 32px;
+    --Ldesc-font: 18px;
+    --Ldesc-fontsmall: 12px;
+
+    --Mheader-font: 32px;
+    --Mdesc-font: 16px;
+
+    --Sheader-font: 30px;
+    --Sdesc-font: 14px;
+
+
+    --box-bg: white;
+    --box-bginside: rgb(245, 251, 255);
+
+    --bg-gradient: linear-gradient(to bottom, #ffffff, #e4fbff);
+    --text-gradient: linear-gradient(to right, #00ff15, #af65ff);
+}
+
+.currentWeather {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #ffffff;
+    place-items: center;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.currentWeather .content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 40px;
+}
+
+.currentWeather .content .contentBox{
+    display: grid;
+    gap: 6px;
+}
+
+.currentWeather .content .contentBox .title{
+    font-size: var(--Lheader-font);
+    
+}
+
+.currentWeather .content .contentBox .desc {
+    font-size: var(--Ldesc-font);
+}
+
+
+.weather {
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 400px;
+    box-shadow: 1px 1px 10px rgb(215, 215, 215);
+    background-color: rgb(255, 255, 255);
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.search {
+    padding: 10px 20px;
+    border-radius: 500px;
+    border: 0.5px solid;
+    width: 300px;
+    height: 20px;
+}
+
+.searchbar input {
+    font-family: "Poppins";
+}
+
+.searchbar span {
+    color: rgb(45, 45, 45);
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.weather_content {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(45, 45, 45);
+
+}
+
+.city {
+    display: grid;
+    gap: 10px;
+    color: rgb(45, 45, 45);
+
+}
+
+#cloud {
+    color: rgb(45, 45, 45);
+    font-size: 80px;
+}
+
+#cel {
+    color: rgb(45, 45, 45);
+    font-size: 20px;
+}
+
+#cityname {
+    color: rgb(45, 45, 45);
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.others {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.air,
+.speed {
+    width: 85%;
+    background-color: aliceblue;
+    color: rgb(45, 45, 45);
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+#recentSearch {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+    column-gap: 10px;
+    overflow-x: scroll;
+    color: rgb(45, 45, 45);
+}
+
+#recentSearch span {
+    background-color: aliceblue;
+    padding: 2px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(45, 45, 45);
+}
+
+.currentWeather .map {
+    width: 100%;
+}
+
+.currentWeather .map img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:930px) {
+    .currentWeather {
+        grid-template-columns: auto;
+        background-color: #ffffff;
+        place-items: center;
+        align-items: center;
+    }
+
+    .currentWeather .map{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+
+    .currentWeather .map img {
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    .currentWeather .content .contentBox{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+
+    .currentWeather .content {
+        border-radius: 10px;
+        padding: 40px 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+
+    .currentWeather .content .contentBox .title{
+        font-size: var(--Mheader-font);
+        
+    }
+    
+    .currentWeather .content .contentBox .desc {
+        font-size: var(--Mdesc-font);
+    }
+}
+
+@media screen and (max-width:520px) {
+    .currentWeather .content .contentBox .title{
+        font-size: var(--Sheader-font);
+        
+    }
+    
+    .currentWeather .content .contentBox .desc {
+        font-size: var(--Sdesc-font);
+    }
+ .weather{
+
+        width:300px;
+    
+    }
+}
