@@ -11,7 +11,7 @@ export default function Community() {
     e.preventDefault();
     if (message.trim() && city) {
       const userName = localStorage.getItem('name'); 
-
+  
       try {
         const response = await axios.post('https://safe-zone-deploy-v2-backend.vercel.app/api/community/create', {
           location,
@@ -21,17 +21,17 @@ export default function Community() {
             message
           }
         });
-
+  
         console.log("Message sent:", response.data);
         setMessage('');
-        
         fetchMessagesForCity(city);
-
+  
       } catch (error) {
-        console.error('Error sending message:', error);
+        console.error('Error sending message:', error.response ? error.response.data : error.message);
       }
     }
   };
+  
 
   const handleChooseLocation = () => {
     if (navigator.geolocation) {

@@ -20,6 +20,7 @@ app.use(cors({
     optionsSuccessStatus: 200,
 }));
 
+
 const communityRouter = require('./routes/communityRouter');
 
 app.use('/api/community', communityRouter);
