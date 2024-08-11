@@ -1,0 +1,81 @@
+.text-logo-gradient {
+  background: linear-gradient(90deg, #65FF4B 0%, #666666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #65FF4B 0%, #666666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background-color: #F7FFF4;
+  overflow-x: hidden;
+  font-family: 'Poppins';
+}
+
+.navbar-container {
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.home-container {
+  background-color: #ffffff;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.twitter-container {
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 15px;
+}
+
+.getinfobtn {
+  background-color: #DAFFCB;
+  text-decoration: none;
+  color: #000;
+  height: 70px;
+  width: 150px;
+  justify-content: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.notification {
+  height: 30px;
+  width: 40px;
+}
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  animation: typing 6s linear infinite;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}

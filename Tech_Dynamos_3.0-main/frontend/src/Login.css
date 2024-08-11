@@ -1,0 +1,206 @@
+:root {
+    --Lheader-font: 46px;
+    --Lsectionhead-font: 32px;
+    --Ldesc-font: 18px;
+    --Ldesc-fontsmall: 12px;
+
+    --Mheader-font: 32px;
+    --Mdesc-font: 16px;
+
+    --Sheader-font: 30px;
+    --Sdesc-font: 14px;
+
+
+    --box-bg: white;
+    --box-bginside: rgb(245, 251, 255);
+
+    --bg-gradient: linear-gradient(to bottom, #ffffff, #e4fbff);
+    --text-gradient: linear-gradient(to right, #00ff15, #af65ff);
+}
+
+
+.login {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 80px 80px;
+    align-items: center;
+}
+
+.login .loginForm {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 60px;
+}
+
+.login .loginForm .header {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.login .loginForm .header .title {
+    font-size: var(--Lheader-font);
+}
+
+.login .loginForm .header .desc {
+    font-size: var(--Ldesc-font);
+    line-height: 1.2;
+}
+
+.login .loginForm .header .desc span {
+    background-image: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.login .loginForm .form {
+    background-color: whiite;
+    box-shadow: 1px 1px 10px rgb(202, 202, 202);
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 60px 30px;
+    border-radius: 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.login .loginForm .form .label {
+    background-color: rgb(56, 56, 56);
+    padding: 10px;
+    color: #e4fbff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: var(--Ldesc-font);
+}
+
+.login .loginForm .form .email {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: var(--Ldesc-font);
+    gap: 10px;
+}
+
+.login .loginForm .form .email input {
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: solid rgb(199, 199, 199);
+}
+
+.login .loginForm .form .password {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: var(--Ldesc-font);
+    gap: 10px;
+}
+
+.login .loginForm .form .password input {
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: solid rgb(199, 199, 199);
+}
+
+.login .loginForm .form .button {
+    background-color: lightgreen;
+    padding: 10px 30px;
+    max-width: fit-content;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.login .loginForm .form .button:hover {
+    transition: 0.3s;
+    transform: translateX(10px);
+    box-shadow: 1px 1px 10px rgb(190, 190, 190);
+}
+
+
+.login .loginForm .form .button a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.login .formImg img {
+    width: 600px;
+    border-radius: 20px;
+
+}
+
+
+@media screen and (max-width:930px) {
+
+    .login .loginForm .header .title {
+        font-size: var(--Mheader-font);
+    }
+
+    .login .loginForm .header .desc {
+        font-size: var(--Mdesc-font);
+        line-height: 1.2;
+    }
+
+    .login .formImg img {
+        width: 90%;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .login {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 80px 40px;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+    .login .loginForm .form .label {
+        font-size: var(--Sdesc-font);
+    }
+
+    .login .loginForm .form .email {
+        font-size: var(--Sdesc-font);
+    }
+
+    .login .loginForm .form .email input {}
+
+    .login .loginForm .form .password {
+        font-size: var(--Sdesc-font);
+    }
+
+    .login .loginForm .form .password input {
+        border-radius: 10px;
+        padding: 10px 10px;
+        border: solid rgb(199, 199, 199);
+    }
+
+    .login .loginForm .form .button {
+        font-size: var(--Sdesc-font);
+    }
+
+
+    .login .loginForm .form .button a {
+        text-decoration: none;
+        color: rgb(56, 56, 56);
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width:620px) {
+
+    .login .loginForm .form {
+        width: 80%;
+    }
+
+    .login .loginForm .header .title {
+        font-size: var(--Sheader-font);
+    }
+
+    .login .loginForm .header .desc {
+        font-size: var(--Sdesc-font);
+        line-height: 1.2;
+    }
+}
