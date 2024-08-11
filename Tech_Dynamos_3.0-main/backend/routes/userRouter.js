@@ -6,8 +6,11 @@ const router = express.Router();
 
 router.post('/signup', asyncHandler(addUser));
 router.post('/login', asyncHandler(login))
+
 router.get('/findusers', asyncHandler(findUsers));
+
 router.delete('/deleteuser/:id', asyncHandler(deleteUser));
+
 router.patch('/updateuser/:id', asyncHandler(updateUser));
 
 module.exports = router;

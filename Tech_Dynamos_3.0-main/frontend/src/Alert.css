@@ -1,0 +1,132 @@
+:root{
+    --Lheader-font: 46px;
+    --Lsectionhead-font: 32px;
+    --Ldesc-font:18px;
+    --Ldesc-fontsmall:12px;
+
+    --Mheader-font:32px;
+    --Mdesc-font:16px;
+
+    --Sheader-font:30px;
+    --Sdesc-font: 14px;
+
+
+    --box-bg:white;
+    --box-bginside:rgb(245, 251, 255);
+
+    --bg-gradient: linear-gradient(to bottom, #ffffff, #e4fbff);
+    --text-gradient: linear-gradient(to right, #00ff15, #af65ff);
+}
+
+
+.alert{
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 40px;
+}
+
+.alert .header{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.alert .header .title{
+    font-size: var(--Lheader-font);
+    font-weight: 600;
+    color: rgb(0, 70, 0);
+}
+
+.alert .header .desc{
+    font-size: var(--Ldesc-font);
+    font-weight: 500;
+    color: grey;
+}
+
+.alert .newsAlerts{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.alert .newsAlerts .title{
+    font-size: var(--Ldesc-font);
+    font-weight: 500;
+    color: grey; 
+    background-color: #ffffff;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px rgb(125, 125, 125) ;
+}
+
+.alert .newsAlerts .news{
+    display: flex;
+    justify-content: start;
+    padding: 20px 10px;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.alert .newsAlerts .newsAlert{
+    background-color: #ffffff;
+    max-width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    border: 5px solid whitesmoke;
+    display: grid;
+}
+
+.alert .newsAlerts .newsAlert span{
+    font-size: var(--Ldesc-font);
+}
+
+.alert .newsAlerts .newsAlert a{
+    text-decoration: none;
+    color: rgb(255, 108, 108);
+    font-size: var(--Ldescsmall-font);
+
+}
+
+.alert .socials{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px grey;
+    padding: 20px;
+}
+
+
+.alert .socials iframe{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;    
+}
+
+.alert .button .btn{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 1px 5px 1px;
+}
+
+.alert .button .btn:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:930px){
+    .alert .header .title{
+        font-size: var(--Mheader-font);
+    }
+    .alert .header .desc{
+        font-size: var(--Mheader-font);
+    }
+}
+

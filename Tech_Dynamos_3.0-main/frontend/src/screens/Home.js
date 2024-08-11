@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import LearnProtect from './LearnProtect'
 import WeatherApp from '../components/Weather'
 import WeatherMap from '../components/Demo'
+import Alert from '../components/Alert'
 
 export default function Home() {
     let userName = localStorage.getItem('name')
@@ -93,6 +94,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div><Alert/></div>
             <div>
                 <LearnProtect />
             </div>

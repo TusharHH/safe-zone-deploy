@@ -25,11 +25,8 @@ export default function Navbar() {
                 <Link className="nav-link" aria-current="page" style={{fontSize:"20px",marginRight:"20px"}} to="/Community">Community</Link>
               </li>
               <li className="nav-item fw-bold">
-                <Link className="nav-link" aria-current="page" to="/Community"><img src='Vector.svg' className='notification'></img></Link>
+                <Link className="nav-link" aria-current="page" to="/Alert"><img src='Vector.svg' className='notification'></img></Link>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/Login">Login</Link>
-              </li> */}
             </ul>
           </div>
         </div>

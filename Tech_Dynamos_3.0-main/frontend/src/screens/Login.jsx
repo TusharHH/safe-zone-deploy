@@ -7,7 +7,15 @@ import { useState } from 'react';
 const LoginForm = () => {
     const { register, handleSubmit, formState: { errors }, setError, clearErrors } = useForm();
     const navigate = useNavigate();
-    const [backendError, setBackendError] = useState(""); 
+    const [backendError, setBackendError] = useState("");
+
+
+    const navigate1 = useNavigate();
+
+    const handleClick = () => {
+        navigate1('/signup'); 
+    };
+
 
     const onSubmit = async (data) => {
         try {
@@ -37,7 +45,7 @@ const LoginForm = () => {
                             </span>
                         </div>
                         <div className="form">
-                            <span className='label'>Login</span>
+                            <button type='button' onClick={handleClick} className='label'>Signup</button>
                             <div className="email">
                                 <label>Enter your Email : </label>
                                 <input
