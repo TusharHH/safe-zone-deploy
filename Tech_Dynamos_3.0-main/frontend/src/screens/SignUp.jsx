@@ -9,7 +9,7 @@ const SignupForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            const res = await axios.post('https://safe-zone-tushar-backend.vercel.app/api/auth/signup', data, {
+            const res = await axios.post('https://safe-zone-deploy-v2-backend.vercel.app/api/auth/signup', data, {
                 withCredentials: true
             });
             console.log(res.data);
