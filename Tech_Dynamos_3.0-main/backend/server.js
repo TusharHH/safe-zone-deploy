@@ -13,7 +13,7 @@ const app = express()
 app.use(bodyPaser.json())
 
 app.use(cors({
-    origin: "*",
+    origin: "https://safe-zone-deploy-frontend.vercel.app",
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type'],
