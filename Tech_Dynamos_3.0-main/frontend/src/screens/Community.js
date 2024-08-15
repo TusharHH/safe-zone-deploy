@@ -13,7 +13,7 @@ export default function Community() {
       const userName = localStorage.getItem('name'); 
   
       try {
-        const response = await axios.post('https://safe-zone-deploy-v2-backend.vercel.app/api/community/create', {
+        const response = await axios.post('http://localhost:5000/api/community/create', {
           location,
           city,
           message: {
@@ -67,7 +67,7 @@ export default function Community() {
 
   const fetchMessagesForCity = async (cityName) => {
     try {
-      const response = await axios.get('https://safe-zone-deploy-v2-backend.vercel.app/api/community/find');
+      const response = await axios.get('http://localhost:5000/api/community/find');
       const filteredMessages = response.data.message.filter(msg => msg.city === cityName);
       setMessages(filteredMessages);
     } catch (error) {
